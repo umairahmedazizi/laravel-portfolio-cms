@@ -1,0 +1,12 @@
+{
+  "name": "Jordan Lee — Software Engineer",
+  "short_name": "Jordan Lee",
+  "description": "Software Engineering student focused on backend logic, API design, and turning requirements into working systems.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF6F2",
+  "theme_color": "#FAF6F2",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
