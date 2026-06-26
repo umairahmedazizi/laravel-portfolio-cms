@@ -498,7 +498,21 @@ section{ position:relative; padding-block:clamp(80px,12vh,140px); }
     margin-top:4px;
   }
   .ml-pop img.logo-react{ margin-top:2px; }
-  .hero-cta .btn{ flex:1; justify-content:center; }
+
+  /* phone: center the hero and slim down the CTA buttons */
+  .hero-inner{ left:0; }
+  .hero-text{ text-align:center; }
+  .hero .sub{ margin-left:auto; margin-right:auto; }
+  .hero-cta{ justify-content:center; gap:10px; margin-top:30px; }
+  .hero-cta .btn{ flex:0 1 auto; padding:11px 18px; font-size:.86rem; }
+
+  /* phone: slimmer, neater contact rows */
+  .contact-panel{ padding:clamp(26px,7vw,90px) clamp(16px,5vw,80px); }
+  .clink{ padding:12px 15px; gap:10px; }
+  .clink .cl-l{ gap:11px; }
+  .clink .cl-ico{ width:34px; height:34px; }
+  .clink .cl-k{ font-size:.62rem; letter-spacing:.1em; }
+  .clink .cl-v{ font-size:.9rem; }
 }
 
 /* Dock */
