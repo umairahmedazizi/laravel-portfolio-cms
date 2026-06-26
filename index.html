@@ -486,7 +486,18 @@ section{ position:relative; padding-block:clamp(80px,12vh,140px); }
 @media (max-width: 520px){
   .skills-grid{ grid-template-columns:1fr; }
   .stats{ grid-template-columns:1fr 1fr; }
-  .mearn{ gap:6px; }
+  /* keep the MEARN logos from colliding on phones: give the letters room and cap each logo */
+  .mearn{ gap:clamp(14px,5vw,26px); }
+  .ml-pop img,
+  .ml-pop img.logo-wide,
+  .ml-pop img.logo-md,
+  .ml-pop img.logo-sm,
+  .ml-pop img.logo-xs{
+    height:auto; width:auto;
+    max-width:clamp(32px,8.5vw,46px); max-height:clamp(26px,7vw,36px);
+    margin-top:4px;
+  }
+  .ml-pop img.logo-react{ margin-top:2px; }
   .hero-cta .btn{ flex:1; justify-content:center; }
 }
 
